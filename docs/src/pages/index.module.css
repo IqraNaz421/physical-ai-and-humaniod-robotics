@@ -55,9 +55,9 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  margin-bottom: 12px;
+  margin-bottom: 30px;
   font-size: 11px;
-  font-weight: 700;
+  font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 1.2px;
 }
@@ -111,9 +111,9 @@
 
 /* Compact Features List */
 .features {
-  display: flex;
+  display:flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 0px;
   margin-bottom: 20px;
 }
 
@@ -141,18 +141,39 @@
 
 /* Compact Buttons */
 .heroButtons {
-  display: flex;
+  display:flex;
   gap: 14px;
-  flex-wrap: wrap;
-}
+   flex-wrap:wrap;
+} 
 
 .heroButtons .button {
   font-weight: 700;
   transition: all 0.3s ease;
-  position: relative;
+  
   overflow: hidden;
   font-size: 0.95rem;
-  padding: 10px 24px;
+  width: auto ;
+  display: inline-block;
+
+  /* --- 1. Default Padding (For Mobile/Small Screens) --- */
+  padding: 8px 16px; 
+  
+
+/* --- 2. Media Query (For Desktop/Larger Screens) --- */
+/* Jab screen 768px se badi ho (Standard Desktop/Tablet View) */
+@media screen and (min-width: 768px) {
+  .heroButtons {
+    flex-direction:column-reverse;
+    align-items: flex-start;
+    justify-content: flex-start; 
+    
+  
+}
+  }
+  .heroButtons .button {
+    padding: 10px 24px ;
+    width: auto ;
+  }
 }
 
 /* Primary Button - Subtle Neon Green */

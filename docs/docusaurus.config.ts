@@ -40,7 +40,7 @@ const config: Config = {
 
   // Custom fields for ChatWidget API configuration
   customFields: {
-    chatbotApiUrl: process.env.CHATBOT_API_URL || 'http://localhost:8000/api',
+    chatbotApiUrl: process.env.CHATBOT_API_URL || 'https://iqoonaz4321-robotic.hf.space',
   },
 
 
@@ -83,10 +83,10 @@ const config: Config = {
     },
     navbar: {
       title: 'Physical AI & Robotics',
-      logo: {
-        alt: 'Physical AI & Robotics Logo',
-        src: 'img/logo.svg',
-      },
+      // logo: {
+      //   alt: 'Physical AI & Robotics Logo',
+      //   src: 'img/new-removebg-preview.png',
+      // },
       items: [
         {
           type: 'docSidebar',
