@@ -40,10 +40,10 @@ const AuthContext = createContext<AuthContextType | undefined>(undefined);
 const getApiBaseUrl = () => {
   // In production (GitHub Pages), use Hugging Face API
   if (typeof window !== 'undefined' && window.location.hostname.includes('github.io')) {
-    return 'https://naimalcreativityai-physical-ai-chatbot-api.hf.space/api';
+    return 'https://iqranaz421-physical-ai-chatbot-api.hf.space/api';
   }
   // In development, use local API
-  return 'http://localhost:3001/api';
+  return 'http://localhost:8000/api';
 };
 
 export function AuthProvider({ children }: { children: React.ReactNode }) {
@@ -56,7 +56,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   const checkAuth = async () => {
     try {
       const res = await fetch(`${API_BASE}/auth/me`, {
-        credentials: 'include',
+        // credentials: 'include',
       });
       if (res.ok) {
         const data = await res.json();
@@ -78,7 +78,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       const res = await fetch(`${API_BASE}/auth/signup`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        credentials: 'include',
+        // credentials: 'include',
         body: JSON.stringify(data),
       });
 
@@ -102,7 +102,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       const res = await fetch(`${API_BASE}/auth/signin`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        credentials: 'include',
+        // credentials: 'include',
         body: JSON.stringify({ email, password }),
       });
 

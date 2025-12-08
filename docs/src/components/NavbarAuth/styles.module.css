@@ -22,8 +22,8 @@
 
 .signinLink:hover {
   background-color: rgba(102, 126, 234, 0.1);
-  border-color: #667eea;
-  color: #667eea;
+  border-color: #63dce5;
+  color: #5ddfdf;
   text-decoration: none;
 }
 
@@ -37,7 +37,7 @@
 }
 
 .signupButton {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #5accdb 0%, #4ba0a2 100%);
   color: white !important;
   padding: 0.4rem 0.9rem;
   border-radius: 6px;
@@ -50,9 +50,9 @@
 }
 
 .signupButton:hover {
-  background: linear-gradient(135deg, #8099f5 0%, #9168c9 100%);
+  background: linear-gradient(135deg, #7edcee 0%, #6ad4cb 100%);
   transform: translateY(-1px);
-  box-shadow: 0 4px 16px rgba(102, 126, 234, 0.4);
+  box-shadow: 0 4px 16px rgba(102, 234, 223, 0.4);
   text-decoration: none;
   color: white !important;
 }
@@ -80,9 +80,9 @@
 }
 
 .userButton:hover {
-  background-color: rgba(102, 126, 234, 0.1);
-  border-color: #667eea;
-  color: #667eea;
+  background-color: rgba(96, 185, 232, 0.1);
+  border-color: #5ac8e1;
+  color: #5bded3;
 }
 
 .userIcon {
@@ -147,7 +147,7 @@
 
 .dropdownItem:hover {
   background-color: rgba(102, 126, 234, 0.1);
-  color: #667eea;
+  color: #6ac4e4;
 }
 
 .dropdownIcon {

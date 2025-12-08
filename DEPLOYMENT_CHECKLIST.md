@@ -31,7 +31,7 @@ Add these secrets in HF Spaces Settings → Variables and secrets:
 1. **DATABASE_URL** (Neon Postgres)
    ```
    Format: postgresql://user:password@host/database?sslmode=require
-   Example: postgresql://naimalarain:abc123@ep-xyz.us-east-2.aws.neon.tech/neondb?sslmode=require
+   Example: postgresql://iqranaz:abc123@ep-xyz.us-east-2.aws.neon.tech/neondb?sslmode=require
    ```
    - Get from: https://console.neon.tech/
 
@@ -50,7 +50,7 @@ Add these secrets in HF Spaces Settings → Variables and secrets:
 
 4. **Update CORS_ORIGINS** (Add Production Frontend)
    ```
-   CORS_ORIGINS=http://localhost:3000,https://naimalarain13.github.io
+   CORS_ORIGINS=http://localhost:3000,https://IqraNaz421.github.io
    ```
 
 ---
@@ -66,14 +66,14 @@ python -c "import secrets; print(secrets.token_urlsafe(32))"
 
 ### Step 2: Configure Hugging Face Spaces
 
-1. Go to: https://huggingface.co/spaces/naimalarain13/physical-ai-chatbot-api/settings
+1. Go to: https://huggingface.co/spaces/IqraNaz421/physical-ai-chatbot-api/settings
 2. Click "Variables and secrets"
 3. Add new secret: `DATABASE_URL`
    - Value: Your Neon Postgres connection string
 4. Add new secret: `JWT_SECRET_KEY`
    - Value: The key you just generated
 5. Update existing secret: `CORS_ORIGINS`
-   - Value: `http://localhost:3000,https://naimalarain13.github.io`
+   - Value: `http://localhost:3000,https://IqraNaz421.github.io`
 
 ### Step 3: Commit and Push Code
 
@@ -171,14 +171,14 @@ git push origin main
 ### Step 5: Verify Hugging Face Deployment
 
 1. Wait for HF Space to rebuild (~3-5 minutes)
-2. Check logs at: https://huggingface.co/spaces/naimalarain13/physical-ai-chatbot-api/logs
+2. Check logs at: https://huggingface.co/spaces/IqraNaz421/physical-ai-chatbot-api/logs
 3. Look for successful startup messages
 
 ### Step 6: Test Production APIs
 
 ```bash
 # Test signup on production
-curl -X POST https://naimalarain13-physical-ai-chatbot-api.hf.space/api/auth/signup \
+curl -X POST https://IqraNaz421-physical-ai-chatbot-api.hf.space/api/auth/signup \
   -H "Content-Type: application/json" \
   -d '{
     "email": "test@example.com",
@@ -193,19 +193,19 @@ curl -X POST https://naimalarain13-physical-ai-chatbot-api.hf.space/api/auth/sig
   -c prod_cookies.txt
 
 # Test signin
-curl -X POST https://naimalarain13-physical-ai-chatbot-api.hf.space/api/auth/signin \
+curl -X POST https://IqraNaz421-physical-ai-chatbot-api.hf.space/api/auth/signin \
   -H "Content-Type: application/json" \
   -d '{"email": "test@example.com", "password": "Test1234!"}' \
   -c prod_cookies.txt
 
 # Test auth check
-curl https://naimalarain13-physical-ai-chatbot-api.hf.space/api/auth/me \
+curl https://IqraNaz421-physical-ai-chatbot-api.hf.space/api/auth/me \
   -b prod_cookies.txt
 ```
 
 ### Step 7: Test Production Frontend
 
-1. Visit: https://naimalarain13.github.io/physical-ai-and-humaniod-robotics/
+1. Visit: https://IqraNaz421.github.io/physical-ai-and-humaniod-robotics/
 2. Click "Sign Up" in navbar
 3. Complete signup form with background info
 4. Verify redirect to home

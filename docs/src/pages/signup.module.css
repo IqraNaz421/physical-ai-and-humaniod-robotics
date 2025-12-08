@@ -4,7 +4,7 @@
   align-items: center;
   min-height: calc(100vh - 60px);
   padding: 2rem 1rem;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #66d0ea 0%, #4b9ca2 100%);
 }
 
 .signupCard {
@@ -83,8 +83,8 @@
 .formGroup select:focus,
 .formGroup textarea:focus {
   outline: none;
-  border-color: #667eea;
-  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+  border-color: #66d6ea;
+  box-shadow: 0 0 0 3px rgba(102, 227, 234, 0.1);
 }
 
 .passwordWrapper {
@@ -118,13 +118,13 @@
 }
 
 .eyeButton:focus {
-  outline: 2px solid #667eea;
+  outline: 2px solid #66e1ea;
   outline-offset: 2px;
   border-radius: 4px;
 }
 
 .inputError {
-  border-color: #f56565 !important;
+  border-color: #65b4f5 !important;
 }
 
 .error {
@@ -173,7 +173,7 @@
 }
 
 .submitButton {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #66dfea 0%, #4ba29e 100%);
   color: white;
   border: none;
   padding: 1rem;
@@ -186,7 +186,7 @@
 
 .submitButton:hover:not(:disabled) {
   transform: translateY(-2px);
-  box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+  box-shadow: 0 5px 20px rgba(102, 234, 223, 0.4);
 }
 
 .submitButton:disabled {

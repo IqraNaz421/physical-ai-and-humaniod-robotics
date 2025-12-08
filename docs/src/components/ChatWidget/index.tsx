@@ -9,7 +9,7 @@ import styles from './styles.module.css';
 import type { Message, Source, SSEMessage, ChatWidgetProps } from './types';
 
 export default function ChatWidget({
-  apiBaseUrl = 'http://localhost:3001/api',
+  apiBaseUrl = 'http://localhost:8000/api',
   selectedText: externalSelectedText,
   currentPage,
   selectionTimestamp,
@@ -259,8 +259,8 @@ export default function ChatWidget({
             
             {messages.length === 0 && !contextText ? (
               <div className={styles.emptyState}>
-                <p>👋 Hello! I'm your Physical AI & Robotics learning assistant.</p>
-                <p>Ask me anything about the course content!</p>
+                <p>👋 Hello! Your Physical AI & Robotics guide is here to assist you.</p>
+                <p>Ask me anything about the book content!</p>
               </div>
             ) : (
               messages.map((message) => (

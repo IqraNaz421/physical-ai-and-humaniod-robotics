@@ -1,33 +1,402 @@
-/**
- * CSS files with the .module.css suffix will be treated as CSS modules
- * and scoped locally.
- */
+/* ============================================
+   OPTIMIZED HERO SECTION - ONE SCREEN FIT
+   ============================================ */
 
-.heroBanner {
-  padding: 4rem 0;
-  text-align: center;
+/* Hero Section Container */
+.heroSection {
+  padding: 0;
+  background: #0a0a0a;
   position: relative;
   overflow: hidden;
+  height: 100vh;
+  display: flex;
+  align-items: center;
 }
 
-@media screen and (max-width: 996px) {
-  .heroBanner {
-    padding: 2rem;
+/* Animated gradient background overlay */
+.heroSection::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 30% 50%, rgba(0, 255, 157, 0.05) 0%, transparent 50%),
+              radial-gradient(circle at 70% 50%, rgba(0, 229, 255, 0.05) 0%, transparent 50%);
+  animation: pulseGlow 8s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes pulseGlow {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 0.5; }
+}
+
+/* Hero Content Layout */
+.heroContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  padding: 0;
+}
+
+/* Hero Text Section */
+.heroText {
+  flex: 1;
+  min-width: 0;
+}
+
+/* Compact Tagline */
+.tagline {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+}
+
+.highlight {
+  color: #00ff9d;
+  background: rgba(0, 255, 157, 0.08);
+  padding: 5px 12px;
+  border-radius: 16px;
+  border: 1px solid rgba(0, 255, 157, 0.25);
+  text-shadow: 0 0 6px rgba(0, 255, 157, 0.3);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.highlight:hover {
+  background: rgba(0, 255, 157, 0.15);
+  border-color: rgba(0, 255, 157, 0.4);
+  text-shadow: 0 0 10px rgba(0, 255, 157, 0.5);
+  transform: translateY(-1px);
+}
+
+.separator {
+  color: rgba(0, 229, 255, 0.5);
+  font-size: 16px;
+  text-shadow: 0 0 5px rgba(0, 229, 255, 0.3);
+}
+
+/* Hero Title - Very Subtle Neon */
+.heroTitle {
+  font-size: 2.8rem;
+  font-weight: 900;
+  line-height: 1.05;
+  margin-bottom: 12px;
+  color: #ffffff !important;
+  text-shadow: 
+    0 0 5px rgba(0, 255, 157, 0.08),
+    0 2px 4px rgba(0, 0, 0, 0.4);
+  letter-spacing: -0.5px;
+}
+
+/* Hero Subtitle */
+.heroSubtitle {
+  font-size: 1.05rem;
+  line-height: 1.45;
+  margin-bottom: 18px;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 400;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+/* Compact Features List */
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 20px;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.95rem;
+  font-weight: 500;
+  padding: 4px 0;
+  transition: all 0.3s ease;
+}
+
+.feature:hover {
+  transform: translateX(6px);
+  color: #00ff9d;
+}
+
+.icon {
+  font-size: 22px;
+  filter: drop-shadow(0 0 6px rgba(0, 255, 157, 0.25));
+  flex-shrink: 0;
+}
+
+/* Compact Buttons */
+.heroButtons {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.heroButtons .button {
+  font-weight: 700;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  font-size: 0.95rem;
+  padding: 10px 24px;
+}
+
+/* Primary Button - Subtle Neon Green */
+.heroButtons .button--primary {
+  background: linear-gradient(135deg, #00ff9d 0%, #00e5ff 100%);
+  color: #0a0a0a;
+  border: none;
+  box-shadow: 
+    0 0 12px rgba(0, 255, 157, 0.25),
+    0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.heroButtons .button--primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 
+    0 0 18px rgba(0, 255, 157, 0.4),
+    0 6px 16px rgba(0, 0, 0, 0.4);
+  background: linear-gradient(135deg, #00ffbb 0%, #00f0ff 100%);
+}
+
+/* Secondary Button - Subtle Blue Outline */
+.heroButtons .button--secondary {
+  background: rgba(0, 229, 255, 0.06);
+  color: #00e5ff;
+  border: 2px solid rgba(0, 229, 255, 0.3);
+  backdrop-filter: blur(10px);
+  box-shadow: 
+    0 0 10px rgba(0, 229, 255, 0.15),
+    0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.heroButtons .button--secondary:hover {
+  background: rgba(0, 229, 255, 0.12);
+  border-color: rgba(0, 229, 255, 0.5);
+  color: #00f0ff;
+  transform: translateY(-2px);
+  box-shadow: 
+    0 0 16px rgba(0, 229, 255, 0.3),
+    0 6px 16px rgba(0, 0, 0, 0.4);
+}
+
+/* Hero Image Section - Proper Size */
+.heroImage {
+  flex: 0 0 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* Subtle glowing circle behind robot */
+.heroImage::before {
+  content: '';
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  background: radial-gradient(circle, rgba(0, 229, 255, 0.08) 0%, transparent 70%);
+  border-radius: 50%;
+  filter: blur(40px);
+  animation: rotate 20s linear infinite;
+  z-index: 0;
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Robot Image - Gentle Bounce + Subtle Glow */
+.robotImg {
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+  position: relative;
+  z-index: 1;
+  filter: drop-shadow(0 8px 25px rgba(0, 255, 157, 0.15));
+  animation: bounce 3.5s ease-in-out infinite;
+}
+
+/* Smooth Bounce Animation */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0px);
   }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+/* ============================================
+   INTRO SECTION
+   ============================================ */
+
+.sectionPadding {
+  padding: 20px 0;
+  background: linear-gradient(180deg, #0a0a0a 0%, #111111 100%);
+}
+
+.sectionTitle {
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #ffffff;
+  text-shadow: 0 0 12px rgba(0, 255, 157, 0.2);
 }
 
 .buttons {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 14px;
+  
 }
 
-.sectionPadding {
-  padding: 60px 0;
+/* ============================================
+   RESPONSIVE DESIGN - MOBILE OPTIMIZED
+   ============================================ */
+
+@media screen and (max-width: 996px) {
+  .heroSection {
+    height: auto;
+    min-height: 100vh;
+    padding: 60px 0;
+  }
+
+  .heroContent {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .heroText {
+    max-width: 100%;
+  }
+
+  .heroTitle {
+    font-size: 2.2rem;
+  }
+
+  .heroSubtitle {
+    font-size: 0rem;
+  }
+
+  .tagline {
+    justify-content: center;
+    font-size: 10px;
+  }
+
+  .features {
+    align-items: center;
+  }
+
+  .feature {
+    font-size: 0.9rem;
+  }
+
+  .feature:hover {
+    transform: translateX(0);
+  }
+
+  .heroButtons {
+    justify-content: center;
+  }
+
+  .heroImage {
+    flex: 0 0 auto;
+    max-width: 350px;
+  }
+
+  .heroImage::before {
+    width: 280px;
+    height: 280px;
+  }
+
+  .robotImg {
+    max-width: 320px;
+  }
 }
 
-.sectionTitle {
-  margin-bottom: 20px;
-  font-size: 2.5rem;
+@media screen and (max-width: 576px) {
+  .heroSection {
+    padding: 40px 0;
+  }
+
+  .heroTitle {
+    font-size: 1.8rem;
+  }
+
+  .heroSubtitle {
+    font-size: 0.95rem;
+  }
+
+  .tagline {
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .highlight {
+    padding: 4px 10px;
+    font-size: 10px;
+  }
+
+  .feature {
+    font-size: 0.85rem;
+  }
+
+  .icon {
+    font-size: 20px;
+  }
+
+  .heroButtons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .heroButtons .button {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+
+  .robotImg {
+    max-width: 260px;
+  }
+
+  .sectionTitle {
+    font-size: 1.8rem;
+  }
+
+  .sectionPadding {
+    padding: 50px 0;
+  }
 }
 
+/* Small phones - Extra compact */
+@media screen and (max-width: 380px) {
+  .heroTitle {
+    font-size: 1.6rem;
+  }
+
+  .heroSubtitle {
+    font-size: 0.9rem;
+  }
+
+  .robotImg {
+    max-width: 220px;
+  }
+}

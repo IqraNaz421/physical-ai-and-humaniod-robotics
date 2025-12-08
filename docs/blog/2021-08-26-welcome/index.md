@@ -1,29 +1,20 @@
 ---
 slug: welcome
-title: Welcome
-authors: [slorber, yangshun]
-tags: [facebook, hello, docusaurus]
+title: Physical AI & Humanoid Robotics Textbook
+authors: [IqraNaz421]
+tags: [robotics, ai, physical-ai, course]
 ---
 
-[Docusaurus blogging features](https://docusaurus.io/docs/blog) are powered by the [blog plugin](https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-content-blog).
+**Welcome to the official textbook and documentation hub for the Physical AI and Humanoid Robotics course!** 🚀
 
-Here are a few tips you might find useful.
+This platform serves as a comprehensive resource, providing in-depth chapters, practical tutorials, and the latest research in the field of intelligent robotic systems.
 
-<!-- truncate -->
+### What You Will Find Here
 
-Simply add Markdown files (or folders) to the `blog` directory.
+* **📘 Comprehensive Chapters:** Explore detailed theoretical concepts of physical AI, control systems, sensing, and actuation.
+* **🛠️ Hands-on Tutorials:** Follow step-by-step guides on implementing AI algorithms on robotic platforms.
+* **🌐 Latest Research:** Stay updated with the rapidly evolving world of humanoid robotics.
 
-Regular blog authors can be added to `authors.yml`.
+**We encourage you to use the built-in search and chat features** for quick answers to your queries as you navigate through the material.
 
-The blog post date can be extracted from filenames, such as:
-
-- `2019-05-30-welcome.md`
-- `2019-05-30-welcome/index.md`
-
-A blog post folder can be convenient to co-locate blog post images:
-
-![Docusaurus Plushie](./docusaurus-plushie-banner.jpeg)
-
-The blog supports tags as well!
-
-**And if you don't want a blog**: just delete this directory, and use `blog: false` in your Docusaurus config.
+Let's build the future of robotics together!

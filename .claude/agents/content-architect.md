@@ -611,6 +611,6 @@ END
 ---
 
 **Version**: 1.0.0
-**Author**: NaimalArain13
-**Repository**: https://github.com/NaimalArain13/add-hackathon-2k25
+**Author**: IqraNaz421
+**Repository**: https://github.com/IqraNaz421/add-hackathon-2k25
 **License**: MIT

@@ -60,7 +60,7 @@ Add these environment variables:
 GEMINI_API_KEY=<your_gemini_api_key>
 QDRANT_URL=https://<your-instance>.cloud.qdrant.io:6333
 QDRANT_API_KEY=<your_qdrant_api_key>
-CORS_ORIGINS=https://naimalarain13.github.io,http://localhost:3000
+CORS_ORIGINS=https://IqraNaz421.github.io,http://localhost:3000
 PYTHON_VERSION=3.11.0
 ```
 
@@ -171,7 +171,7 @@ npm run deploy  # If using GitHub Pages
 
 Solution: Update CORS_ORIGINS in Render environment:
 ```
-CORS_ORIGINS=https://naimalarain13.github.io,http://localhost:3000
+CORS_ORIGINS=https://IqraNaz421.github.io,http://localhost:3000
 ```
 
 ### Free Tier Limitations

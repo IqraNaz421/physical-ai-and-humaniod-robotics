@@ -7,7 +7,7 @@ surface: agent
 model: claude-sonnet-4-5-20250929
 feature: none
 branch: master
-user: naimalarain13
+user: IqraNaz421
 command: /sp.git.commit_pr
 labels: ["git", "initialization", "deployment", "github", "commit"]
 links:
@@ -47,11 +47,11 @@ Executed autonomous Git workflow to initialize repository and prepare for GitHub
 1. Staged all changes (constitution, Docusaurus, GitHub Actions, docs, PHR)
 2. Created comprehensive commit message covering:
    - Constitution v1.0.0 with 9 core principles
-   - Docusaurus configuration for naimalarain13/add-hackathon-2k25
+   - Docusaurus configuration for IqraNaz421/add-hackathon-2k25
    - GitHub Actions auto-deployment workflow
    - Complete deployment documentation
    - Prompt history record (PHR 001)
-3. Added GitHub remote: https://github.com/naimalarain13/add-hackathon-2k25.git
+3. Added GitHub remote: https://github.com/IqraNaz421/add-hackathon-2k25.git
 4. Attempted push (requires authentication - manual step needed)
 
 **Commit Created:**

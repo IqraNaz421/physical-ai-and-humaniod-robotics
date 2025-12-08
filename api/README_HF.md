@@ -82,8 +82,8 @@ python app.py
 ## Frontend Integration
 
 This API is designed to work with the Physical AI textbook frontend:
-- Frontend: https://naimalarain13.github.io/physical-ai-and-humaniod-robotics/
-- Repository: https://github.com/NaimalArain13/physical-ai-and-humaniod-robotics
+- Frontend: https://IqraNaz421.github.io/physical-ai-and-humaniod-robotics/
+- Repository: https://github.com/IqraNaz421/physical-ai-and-humaniod-robotics
 
 ## Cost
 
@@ -98,4 +98,4 @@ MIT License
 
 ## Support
 
-For issues and questions, please visit the [GitHub repository](https://github.com/NaimalArain13/physical-ai-and-humaniod-robotics/issues).
+For issues and questions, please visit the [GitHub repository](https://github.com/IqraNaz421/physical-ai-and-humaniod-robotics/issues).

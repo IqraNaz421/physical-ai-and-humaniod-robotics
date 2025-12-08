@@ -4,7 +4,7 @@
   align-items: center;
   min-height: calc(100vh - 60px);
   padding: 2rem 1rem;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #5fd0dc 0%, #4ba29e 100%);
 }
 
 .signinCard {
@@ -58,7 +58,7 @@
 
 .formGroup input:focus {
   outline: none;
-  border-color: #667eea;
+  border-color: #59c7d1;
   box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
 }
 
@@ -93,7 +93,7 @@
 }
 
 .eyeButton:focus {
-  outline: 2px solid #667eea;
+  outline: 2px solid #5fd2e7;
   outline-offset: 2px;
   border-radius: 4px;
 }
@@ -117,7 +117,7 @@
 }
 
 .submitButton {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #66eae6 0%, #4ba29f 100%);
   color: white;
   border: none;
   padding: 1rem;
@@ -131,7 +131,7 @@
 
 .submitButton:hover:not(:disabled) {
   transform: translateY(-2px);
-  box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+  box-shadow: 0 5px 20px rgba(102, 234, 208, 0.4);
 }
 
 .submitButton:disabled {

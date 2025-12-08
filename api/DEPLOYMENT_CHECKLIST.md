@@ -32,7 +32,7 @@ Quick checklist for deploying to Render.
   GEMINI_API_KEY=your_key_here
   QDRANT_URL=https://xxxxx.cloud.qdrant.io:6333
   QDRANT_API_KEY=your_key_here
-  CORS_ORIGINS=https://naimalarain13.github.io,http://localhost:3000
+  CORS_ORIGINS=https://IqraNaz421.github.io,http://localhost:3000
   ```
 
 - [ ] **Deploy service**
@@ -83,7 +83,7 @@ Quick checklist for deploying to Render.
 ## Your Deployment URLs
 
 - **Backend API**: `https://your-app.onrender.com`
-- **Frontend**: `https://naimalarain13.github.io/physical-ai-and-humaniod-robotics/`
+- **Frontend**: `https://IqraNaz421.github.io/physical-ai-and-humaniod-robotics/`
 - **API Health**: `https://your-app.onrender.com/api/health`
 - **API Docs**: `https://your-app.onrender.com/docs`
 
@@ -106,7 +106,7 @@ curl -X POST https://your-app.onrender.com/api/chat \
 
 ### 3. Check CORS
 ```bash
-curl -H "Origin: https://naimalarain13.github.io" \
+curl -H "Origin: https://IqraNaz421.github.io" \
   -H "Access-Control-Request-Method: POST" \
   -H "Access-Control-Request-Headers: Content-Type" \
   -X OPTIONS https://your-app.onrender.com/api/chat -v
@@ -126,7 +126,7 @@ curl -H "Origin: https://naimalarain13.github.io" \
 
 ### CORS Errors
 - Add frontend URL to `CORS_ORIGINS`
-- Format: `https://naimalarain13.github.io,http://localhost:3000`
+- Format: `https://IqraNaz421.github.io,http://localhost:3000`
 
 ### Slow First Request
 - ⚠️ Free tier spins down after 15 minutes

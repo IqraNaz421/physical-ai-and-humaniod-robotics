@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://github.com/NaimalArain13/add-hackathon-2k25/schemas/category-config.json",
+  "$id": "https://github.com/IqraNaz421/add-hackathon-2k25/schemas/category-config.json",
   "title": "Docusaurus Category Configuration",
   "description": "Schema for _category_.json files in Docusaurus docs directories",
   "type": "object",

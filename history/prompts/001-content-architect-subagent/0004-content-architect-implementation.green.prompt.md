@@ -7,7 +7,7 @@ surface: agent
 model: claude-sonnet-4-5-20250929
 feature: 001-content-architect-subagent
 branch: 001-content-architect-subagent
-user: NaimalArain13
+user: IqraNaz421
 command: /sp.implement
 labels: ["implementation", "subagent", "docusaurus", "full-stack", "production-ready"]
 links:
@@ -30,7 +30,7 @@ tests:
 **Command**: `/sp.implement`
 **User Input**: "now implement the task. but before start implementation please check if we on correct branch or not because after implementation part we have to push this agent to our github branch which we created earlier 001-content-architect-subagent"
 
-**Context**: User confirmed GitHub repository URL (https://github.com/NaimalArain13/add-hackathon-2k25) and requested implementation of Content Architect Subagent with branch verification before starting. User wants to commit and push to GitHub branch `001-content-architect-subagent` after implementation completes.
+**Context**: User confirmed GitHub repository URL (https://github.com/IqraNaz421/add-hackathon-2k25) and requested implementation of Content Architect Subagent with branch verification before starting. User wants to commit and push to GitHub branch `001-content-architect-subagent` after implementation completes.
 
 **Branch Verification**: Confirmed on correct branch `001-content-architect-subagent` before implementation.
 

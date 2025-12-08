@@ -51,7 +51,7 @@ This project combines an educational textbook platform built with Docusaurus wit
 ### 1. Clone Repository
 
 ```bash
-git clone https://github.com/NaimalArain13/physical-ai-and-humaniod-robotics.git
+git clone https://github.com/IqraNaz421/physical-ai-and-humaniod-robotics.git
 cd physical-ai-and-humaniod-robotics
 ```
 
@@ -277,7 +277,7 @@ See [CHATBOT_SETUP.md](./CHATBOT_SETUP.md) for detailed deployment guides.
 - Server-Sent Events
 
 ### AI/ML
-- Gemini 1.5 Flash (LLM)
+- Gemini 2.5 Flash (LLM)
 - BAAI/bge-small-en-v1.5 (embeddings)
 - Qdrant (vector database)
 
@@ -303,8 +303,8 @@ MIT License - see LICENSE file for details
 ## 📧 Contact
 
 - **Author**: Naimal Arain
-- **GitHub**: [@NaimalArain13](https://github.com/NaimalArain13)
-- **Repository**: [physical-ai-and-humaniod-robotics](https://github.com/NaimalArain13/physical-ai-and-humaniod-robotics)
+- **GitHub**: [@IqraNaz421](https://github.com/IqraNaz421)
+- **Repository**: [physical-ai-and-humaniod-robotics](https://github.com/IqraNaz421/physical-ai-and-humaniod-robotics)
 
 ---
 

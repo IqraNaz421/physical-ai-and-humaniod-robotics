@@ -46,7 +46,7 @@ QDRANT_URL=https://your-qdrant-instance.cloud.qdrant.io:6333
 QDRANT_API_KEY=your_qdrant_api_key_here
 
 # CORS Configuration
-CORS_ORIGINS=http://localhost:3000,https://naimalarain13.github.io
+CORS_ORIGINS=http://localhost:3000,https://IqraNaz421.github.io
 ```
 
 ### 3. Test Qdrant Connection

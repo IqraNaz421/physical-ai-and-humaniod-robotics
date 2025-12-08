@@ -14,6 +14,6 @@ services:
       - key: QDRANT_API_KEY
         sync: false
       - key: CORS_ORIGINS
-        value: https://naimalarain13.github.io
+        value: https://IqraNaz421.github.io
       - key: PYTHON_VERSION
         value: 3.11.0

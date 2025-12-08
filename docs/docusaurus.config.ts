@@ -15,13 +15,13 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: 'https://NaimalArain13.github.io',
+  url: 'https://IqraNaz421.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/physical-ai-and-humaniod-robotics/',
 
   // GitHub pages deployment config.
-  organizationName: 'NaimalArain13', // Usually your GitHub org/user name.
+  organizationName: 'IqraNaz421', // Usually your GitHub org/user name.
   projectName: 'physical-ai-and-humaniod-robotics', // Usually your repo name.
 
   // Deployment branch configuration
@@ -40,7 +40,7 @@ const config: Config = {
 
   // Custom fields for ChatWidget API configuration
   customFields: {
-    chatbotApiUrl: process.env.CHATBOT_API_URL || 'https://naimalcreativityai-physical-ai-chatbot-api.hf.space/api',
+    chatbotApiUrl: process.env.CHATBOT_API_URL || 'http://localhost:8000/api',
   },
 
 
@@ -52,7 +52,7 @@ const config: Config = {
           sidebarPath: './sidebars.ts',
           // Edit this page links
           editUrl:
-            'https://github.com/NaimalArain13/physical-ai-and-humaniod-robotics/tree/master/docs/',
+            'https://github.com/IqraNaz421/physical-ai-and-humaniod-robotics/tree/master/docs/',
         },
         blog: {
           showReadingTime: true,
@@ -62,7 +62,7 @@ const config: Config = {
           },
           // Edit this page links
           editUrl:
-            'https://github.com/NaimalArain13/physical-ai-and-humaniod-robotics/tree/master/docs/',
+            'https://github.com/IqraNaz421/physical-ai-and-humaniod-robotics/tree/master/docs/',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
@@ -105,47 +105,6 @@ const config: Config = {
     },
     footer: {
       style: 'dark',
-      links: [
-        {
-          title: 'Docs',
-          items: [
-            {
-              label: 'Tutorial',
-              to: '/docs/intro',
-            },
-          ],
-        },
-        {
-          title: 'Community',
-          items: [
-            {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'X',
-              href: 'https://x.com/docusaurus',
-            },
-          ],
-        },
-        {
-          title: 'More',
-          items: [
-            {
-              label: 'Blog',
-              to: '/blog',
-            },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/NaimalArain13/physical-ai-and-humaniod-robotics',
-            },
-          ],
-        },
-      ],
       copyright: `Copyright © ${new Date().getFullYear()} Physical AI & Humanoid Robotics Textbook. Built with Docusaurus.`,
     },
     prism: {

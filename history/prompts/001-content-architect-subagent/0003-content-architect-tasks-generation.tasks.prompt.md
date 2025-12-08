@@ -7,7 +7,7 @@ surface: agent
 model: claude-sonnet-4-5-20250929
 feature: 001-content-architect-subagent
 branch: 001-content-architect-subagent
-user: NaimalArain13
+user: IqraNaz421
 command: /sp.tasks
 labels: ["subagent", "task-generation", "user-story-driven", "incremental-delivery"]
 links:

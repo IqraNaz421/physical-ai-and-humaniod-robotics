@@ -114,7 +114,7 @@ JWT_SECRET_KEY=<run: python -c "import secrets; print(secrets.token_urlsafe(32))
 GEMINI_API_KEY=<your-existing-key>
 QDRANT_URL=<your-existing-url>
 QDRANT_API_KEY=<your-existing-key>
-CORS_ORIGINS=http://localhost:3000,https://naimalarain13.github.io
+CORS_ORIGINS=http://localhost:3000,https://IqraNaz421.github.io
 
 # 5. Install dependencies
 cd api
@@ -223,7 +223,7 @@ npm start
 2. **Update CORS for Production**:
    ```python
    # In api/.env (for HF deployment)
-   CORS_ORIGINS=https://naimalarain13.github.io
+   CORS_ORIGINS=https://IqraNaz421.github.io
    ```
 
 3. **Commit and Push**:
@@ -234,7 +234,7 @@ npm start
    ```
 
 4. **Test Production**:
-   - Visit https://naimalarain13.github.io/physical-ai-and-humaniod-robotics/signup
+   - Visit https://IqraNaz421.github.io/physical-ai-and-humaniod-robotics/signup
    - Complete signup flow
    - Verify authentication works
 

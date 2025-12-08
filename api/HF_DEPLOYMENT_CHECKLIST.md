@@ -56,7 +56,7 @@ In your Space → **Settings** → **Repository secrets**:
 - [ ] `GEMINI_API_KEY` = Get from https://aistudio.google.com/app/apikey
 - [ ] `QDRANT_URL` = `https://xxxxx.cloud.qdrant.io:6333`
 - [ ] `QDRANT_API_KEY` = Your Qdrant API key
-- [ ] `CORS_ORIGINS` = `https://naimalarain13.github.io,http://localhost:3000`
+- [ ] `CORS_ORIGINS` = `https://IqraNaz421.github.io,http://localhost:3000`
 
 ### 6. Wait for Build (3-5 min)
 - [ ] Watch **"Logs"** tab
@@ -100,7 +100,7 @@ npm run deploy
 ```
 
 ### 11. Test End-to-End (1 min)
-- [ ] Open: `https://naimalarain13.github.io/physical-ai-and-humaniod-robotics/`
+- [ ] Open: `https://IqraNaz421.github.io/physical-ai-and-humaniod-robotics/`
 - [ ] Select text on any lesson
 - [ ] Click "💬 Ask about this"
 - [ ] Verify chatbot responds

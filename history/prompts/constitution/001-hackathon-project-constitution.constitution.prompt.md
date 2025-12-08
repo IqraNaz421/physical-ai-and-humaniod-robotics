@@ -7,7 +7,7 @@ surface: agent
 model: claude-sonnet-4-5-20250929
 feature: none
 branch: master
-user: NaimalArain13
+user: IqraNaz421
 command: /sp.constitution
 labels: ["constitution", "hackathon", "physical-ai", "robotics", "textbook", "initialization"]
 links:

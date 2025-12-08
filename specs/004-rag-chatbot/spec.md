@@ -381,7 +381,7 @@ QDRANT_URL=https://xxx.qdrant.io:6333
 QDRANT_API_KEY=...
 
 # Application
-CORS_ORIGINS=http://localhost:3000,https://naimalarain13.github.io
+CORS_ORIGINS=http://localhost:3000,https://IqraNaz421.github.io
 RATE_LIMIT_PER_MINUTE=10
 LOG_LEVEL=INFO
 ```

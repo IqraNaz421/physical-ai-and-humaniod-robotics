@@ -3,7 +3,7 @@
  */
 
 .selectionButton {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #5cd4e3 0%, #4b8ea2 100%);
   color: white;
   border: none;
   padding: 8px 16px;
@@ -11,7 +11,7 @@
   font-size: 14px;
   font-weight: 500;
   cursor: pointer;
-  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+  box-shadow: 0 4px 12px rgba(102, 234, 221, 0.4);
   z-index: 10000 !important; /* Very high z-index to ensure visibility */
   display: flex;
   align-items: center;
@@ -35,7 +35,7 @@
 
 .selectionButton:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(102, 126, 234, 0.5);
+  box-shadow: 0 6px 16px rgba(102, 234, 225, 0.5);
 }
 
 .selectionButton:active {
@@ -44,10 +44,10 @@
 
 /* Dark theme support */
 [data-theme='dark'] .selectionButton {
-  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.6);
+  box-shadow: 0 4px 12px rgba(102, 234, 192, 0.6);
 }
 
 [data-theme='dark'] .selectionButton:hover {
-  box-shadow: 0 6px 16px rgba(102, 126, 234, 0.7);
+  box-shadow: 0 6px 16px rgba(102, 234, 219, 0.7);
 }
 

@@ -101,7 +101,7 @@ In your Hugging Face Space:
 GEMINI_API_KEY = your_gemini_api_key_here
 QDRANT_URL = https://xxxxx.cloud.qdrant.io:6333
 QDRANT_API_KEY = your_qdrant_api_key_here
-CORS_ORIGINS = https://naimalarain13.github.io,http://localhost:3000
+CORS_ORIGINS = https://IqraNaz421.github.io,http://localhost:3000
 ```
 
 ### Where to get credentials:
@@ -206,7 +206,7 @@ npm run deploy
 
 ## Step 10: Test End-to-End
 
-1. Open your deployed site: `https://naimalarain13.github.io/physical-ai-and-humaniod-robotics/`
+1. Open your deployed site: `https://IqraNaz421.github.io/physical-ai-and-humaniod-robotics/`
 2. Open any lesson page
 3. Select text → Click "💬 Ask about this"
 4. Verify chatbot responds with textbook content
@@ -241,7 +241,7 @@ npm run deploy
 
 Solution: Add frontend URL to `CORS_ORIGINS` secret:
 ```
-CORS_ORIGINS=https://naimalarain13.github.io,http://localhost:3000
+CORS_ORIGINS=https://IqraNaz421.github.io,http://localhost:3000
 ```
 
 Then restart the Space (Settings → Factory reboot)

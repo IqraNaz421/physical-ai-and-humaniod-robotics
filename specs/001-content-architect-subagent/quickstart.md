@@ -445,7 +445,7 @@ claude logs --last
 ```
 
 **Report Issues**:
-- GitHub Issues: https://github.com/NaimalArain13/add-hackathon-2k25/issues
+- GitHub Issues: https://github.com/IqraNaz421/add-hackathon-2k25/issues
 - Include: Error message, COURSE_CONTENT.md snippet, system info
 
 **Contribute**:

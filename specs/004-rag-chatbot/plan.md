@@ -165,7 +165,7 @@ docs/                          # Frontend (Docusaurus)
    GEMINI_API_KEY=Ai-your-gemini-key-here
    QDRANT_URL=https://your-cluster.qdrant.io:6333
    QDRANT_API_KEY=your-qdrant-key
-   CORS_ORIGINS=http://localhost:3000,https://naimalarain13.github.io/physical-ai-and-humaniod-robotics
+   CORS_ORIGINS=http://localhost:3000,https://IqraNaz421.github.io/physical-ai-and-humaniod-robotics
    ```
 
 **Deliverables**:

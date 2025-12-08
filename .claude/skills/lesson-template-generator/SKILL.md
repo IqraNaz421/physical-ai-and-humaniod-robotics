@@ -296,4 +296,4 @@ By the end of this lesson, you will be able to:
 **Version**: 1.0.0
 **Status**: Active (Phase 1)
 **Last Updated**: 2025-11-28
-**Author**: NaimalArain13
+**Author**: IqraNaz421
