@@ -125,7 +125,7 @@ export default function ChatWidget({
       conversation_history: conversationHistory,
     };
 
-    const response = await fetch(`${apiBaseUrl}/chat`, {
+    const response = await fetch(`${apiBaseUrl}/api/chat`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
