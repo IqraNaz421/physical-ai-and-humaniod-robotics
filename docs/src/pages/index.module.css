@@ -727,7 +727,7 @@
   .heroButtons {
     flex-direction: column;
     width: 100%;
-    gap: 10px; /* Reduced gap between stacked buttons */
+    gap: 10px; 
   }
 
   .heroButtons .button {
