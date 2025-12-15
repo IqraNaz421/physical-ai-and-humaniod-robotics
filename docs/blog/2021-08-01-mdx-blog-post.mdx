@@ -1,0 +1,54 @@
+---
+slug: mdx-blog-post
+title: Implementing Basic Control Loops in Python (MDX Tutorial)
+authors: [IqraNaz421]
+tags: [tutorial, python, control-systems, actuators]
+---
+
+**This interactive post guides you through setting up a basic Proportional-Integral-Derivative (PID) control loop in Python, a core concept in robotics.** We'll use MDX to embed runnable code and notes.
+
+:::tip Prerequisites
+Aapko Python ki basic understanding aur Thori si Linear Algebra ki knowledge honi chahiye.
+:::
+
+### 1. PID Controller ka Nazariya (Theory)
+
+PID Controller ka kaam **measured value** aur **desired setpoint** ke beech ka farq (error) kam karna hota hai. Yeh teen term use karta hai: Proportional (P), Integral (I), aur Derivative (D). 
+
+[Image of a PID control loop diagram]
+
+
+### 2. Python mein PID Class
+
+Aaiye, hum ek basic Python class banate hain.
+
+```python
+# PIDController.py
+class PIDController:
+    def __init__(self, Kp, Ki, Kd, dt):
+        self.Kp = Kp  # Proportional gain
+        self.Ki = Ki  # Integral gain
+        self.Kd = Kd  # Derivative gain
+        self.dt = dt  # Time step
+
+        self.previous_error = 0
+        self.integral = 0
+
+    def calculate_output(self, setpoint, measured_value):
+        error = setpoint - measured_value
+
+        # Proportional Term
+        P = self.Kp * error
+
+        # Integral Term
+        self.integral += error * self.dt
+        I = self.Ki * self.integral
+
+        # Derivative Term
+        derivative = (error - self.previous_error) / self.dt
+        D = self.Kd * derivative
+
+        # Total Output
+        output = P + I + D
+        self.previous_error = error
+        return output

@@ -1,0 +1,743 @@
+/* ============================================
+   OPTIMIZED HERO SECTION - ONE SCREEN FIT
+   ============================================ */
+
+ 
+ /* .heroSection {
+  padding: 0;
+  background: #0a0a0a;
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.heroSection::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 30% 50%, rgba(0, 255, 157, 0.05) 0%, transparent 50%),
+              radial-gradient(circle at 70% 50%, rgba(0, 229, 255, 0.05) 0%, transparent 50%);
+  animation: pulseGlow 8s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes pulseGlow {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 0.5; }
+}
+
+
+.heroContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  padding: 0;
+}
+
+
+.heroText {
+  flex: 1;
+  min-width: 0;
+}
+
+
+.tagline {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 30px;
+  font-size: 11px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+}
+
+.highlight {
+  color: #00ff9d;
+  background: rgba(0, 255, 157, 0.08);
+  padding: 5px 12px;
+  border-radius: 16px;
+  border: 1px solid rgba(0, 255, 157, 0.25);
+  text-shadow: 0 0 6px rgba(0, 255, 157, 0.3);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.highlight:hover {
+  background: rgba(0, 255, 157, 0.15);
+  border-color: rgba(0, 255, 157, 0.4);
+  text-shadow: 0 0 10px rgba(0, 255, 157, 0.5);
+  transform: translateY(-1px);
+}
+
+.separator {
+  color: rgba(0, 229, 255, 0.5);
+  font-size: 16px;
+  text-shadow: 0 0 5px rgba(0, 229, 255, 0.3);
+}
+
+
+.heroTitle {
+  font-size: 2.8rem;
+  font-weight: 900;
+  line-height: 1.05;
+  margin-bottom: 12px;
+  color: #ffffff !important;
+  text-shadow: 
+    0 0 5px rgba(0, 255, 157, 0.08),
+    0 2px 4px rgba(0, 0, 0, 0.4);
+  letter-spacing: -0.5px;
+}
+
+/
+.heroSubtitle {
+  font-size: 1.05rem;
+  line-height: 1.45;
+  margin-bottom: 18px;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 400;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+
+.features {
+  display:flex;
+  flex-direction: column;
+  gap: 0px;
+  margin-bottom: 20px;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.95rem;
+  font-weight: 500;
+  padding: 4px 0;
+  transition: all 0.3s ease;
+}
+
+.feature:hover {
+  transform: translateX(6px);
+  color: #00ff9d;
+}
+
+.icon {
+  font-size: 22px;
+  filter: drop-shadow(0 0 6px rgba(0, 255, 157, 0.25));
+  flex-shrink: 0;
+}
+
+
+.heroButtons {
+  display:flex;
+  gap: 14px;
+   flex-wrap:wrap;
+} 
+
+.heroButtons .button {
+  font-weight: 700;
+  transition: all 0.3s ease;
+  
+  overflow: hidden;
+  font-size: 0.95rem;
+  width: auto ;
+  display: inline-block;
+  padding: 8px 16px; 
+  
+
+
+@media screen and (min-width: 768px) {
+  .heroButtons {
+    flex-direction:column-reverse;
+    align-items: flex-start;
+    justify-content: flex-start; 
+    
+  
+}
+  }
+  .heroButtons .button {
+    padding: 10px 24px ;
+    width: auto ;
+  }
+}
+
+
+.heroButtons .button--primary {
+  background: linear-gradient(135deg, #00ff9d 0%, #00e5ff 100%);
+  color: #0a0a0a;
+  border: none;
+  box-shadow: 
+    0 0 12px rgba(0, 255, 157, 0.25),
+    0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.heroButtons .button--primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 
+    0 0 18px rgba(0, 255, 157, 0.4),
+    0 6px 16px rgba(0, 0, 0, 0.4);
+  background: linear-gradient(135deg, #00ffbb 0%, #00f0ff 100%);
+}
+
+
+.heroButtons .button--secondary {
+  background: rgba(0, 229, 255, 0.06);
+  color: #00e5ff;
+  border: 2px solid rgba(0, 229, 255, 0.3);
+  backdrop-filter: blur(10px);
+  box-shadow: 
+    0 0 10px rgba(0, 229, 255, 0.15),
+    0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.heroButtons .button--secondary:hover {
+  background: rgba(0, 229, 255, 0.12);
+  border-color: rgba(0, 229, 255, 0.5);
+  color: #00f0ff;
+  transform: translateY(-2px);
+  box-shadow: 
+    0 0 16px rgba(0, 229, 255, 0.3),
+    0 6px 16px rgba(0, 0, 0, 0.4);
+}
+
+
+.heroImage {
+  flex: 0 0 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+
+.heroImage::before {
+  content: '';
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  background: radial-gradient(circle, rgba(0, 229, 255, 0.08) 0%, transparent 70%);
+  border-radius: 50%;
+  filter: blur(40px);
+  animation: rotate 20s linear infinite;
+  z-index: 0;
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.robotImg {
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+  position: relative;
+  z-index: 1;
+  filter: drop-shadow(0 8px 25px rgba(0, 255, 157, 0.15));
+  animation: bounce 3.5s ease-in-out infinite;
+}
+
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+
+.sectionPadding {
+  padding: 20px 0;
+  background: linear-gradient(180deg, #0a0a0a 0%, #111111 100%);
+}
+
+.sectionTitle {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #ffffff;
+  text-shadow: 0 0 12px rgba(0, 255, 157, 0.2);
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  
+}
+
+@media screen and (max-width: 996px) {
+  .heroSection {
+    height: auto;
+    min-height: 100vh;
+    padding: 60px 0;
+  }
+
+  .heroContent {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .heroText {
+    max-width: 100%;
+  }
+
+  .heroTitle {
+    font-size: 2.2rem;
+  }
+
+  .heroSubtitle {
+    font-size: 0rem;
+  }
+
+  .tagline {
+    justify-content: center;
+    font-size: 10px;
+  }
+
+  .features {
+    align-items: center;
+  }
+
+  .feature {
+    font-size: 0.9rem;
+  }
+
+  .feature:hover {
+    transform: translateX(0);
+  }
+
+  .heroButtons {
+    justify-content: center;
+  }
+
+  .heroImage {
+    flex: 0 0 auto;
+    max-width: 350px;
+  }
+
+  .heroImage::before {
+    width: 280px;
+    height: 280px;
+  }
+
+  .robotImg {
+    max-width: 320px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .heroSection {
+    padding: 40px 0;
+  }
+
+  .heroTitle {
+    font-size: 1.8rem;
+  }
+
+  .heroSubtitle {
+    font-size: 0.95rem;
+  }
+
+  .tagline {
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .highlight {
+    padding: 4px 10px;
+    font-size: 10px;
+  }
+
+  .feature {
+    font-size: 0.85rem;
+  }
+
+  .icon {
+    font-size: 20px;
+  }
+
+  .heroButtons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .heroButtons .button {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+
+  .robotImg {
+    max-width: 260px;
+  }
+
+  .sectionTitle {
+    font-size: 1.8rem;
+  }
+
+  .sectionPadding {
+    padding: 50px 0;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .heroTitle {
+    font-size: 1.6rem;
+  }
+
+  .heroSubtitle {
+    font-size: 0.9rem;
+  }
+
+  .robotImg {
+    max-width: 220px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ============================================
+    HERO SECTION - Left Content / Right Image (Tech Grid / Cyberpunk)
+    ============================================ */
+
+.heroSection {
+  padding: 40px 0;
+  background: #06060c; 
+  position: relative;
+  overflow: hidden;
+  min-height: 90vh;
+  display: flex;
+  align-items: center; 
+}
+
+/* Technical Grid Background Overlay - (Unchanged) */
+.heroSection::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    linear-gradient(to right, rgba(0, 255, 157, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 255, 157, 0.05) 1px, transparent 1px);
+  background-size: 50px 50px;
+  opacity: 0.7;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Hero Content Layout - Split View */
+.heroContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px; 
+  position: relative;
+  z-index: 2; 
+  width: 100%; 
+}
+
+/* Hero Text Section (Left) - Compressing content */
+.heroText {
+  flex: 1;
+  min-width: 0;
+  max-width: 50%;
+  text-align: left;
+}
+
+/* Compact Tagline - Reduced space */
+.tagline {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 15px;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  color: rgba(255, 255, 255, 0.6);
+  border-left: 3px solid #00ff9d; 
+  padding-left: 15px;
+}
+
+.highlight {
+  color: #00ff9d;
+  background: none;
+  padding: 0;
+  border-radius: 0;
+  text-shadow: 0 0 8px rgba(0, 255, 157, 0.5);
+  transition: color 0.2s ease;
+}
+
+.separator {
+  color: rgba(255, 255, 255, 0.2);
+  font-size: 14px;
+}
+
+/* Hero Title - Slightly reduced size for safety */
+.heroTitle {
+  font-size: 4rem; 
+  font-weight: 900;
+  line-height: 1.1;
+  margin-bottom: 10px;
+  color: #ffffff !important;
+  text-shadow: 
+    0 0 20px rgba(0, 255, 157, 0.2), 
+    0 5px 15px rgba(0, 0, 0, 0.6);
+  letter-spacing: -1.5px; 
+}
+
+/* Hero Subtitle - Reduced space */
+.heroSubtitle {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  color: rgba(255, 255, 255, 0.85); 
+  font-weight: 400;
+}
+
+/* Compact Features List - Reduced space */
+.features {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+  justify-content: flex-start; 
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #00e5ff; 
+  font-size: 0.85rem;
+  font-weight: 100;
+  padding: 4px 10px;
+  border: 1px solid rgba(0, 229, 255, 0.3);
+  border-radius: 20px;
+  background: rgba(0, 229, 255, 0.05);
+  transition: all 0.3s ease;
+}
+
+.feature:hover {
+  transform: translateY(-2px);
+  color: #00ff9d;
+  border-color: #00ff9d;
+  background: rgba(0, 255, 157, 0.1);
+}
+
+.icon {
+  font-size: 10px;
+  filter: drop-shadow(0 0 5px rgba(0, 255, 157, 0.5));
+  flex-shrink: 0;
+}
+
+/* Buttons - Size Reduction */
+.heroButtons {
+  display:flex;
+  gap: 15px;
+  flex-wrap:wrap;
+  justify-content: flex-start;
+} 
+
+.heroButtons .button {
+  font-weight: 700;
+  font-size: 0.95rem; 
+  padding: 10px 24px;
+  border-radius: 6px; 
+  transition: all 0.3s ease;
+}
+
+/* Primary and Secondary Button Styles (Unchanged) */
+
+/* Hero Image Section (Right) - (Unchanged) */
+.heroImage {
+  flex: 0 0 45%; 
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  perspective: 1000px; 
+}
+
+/* Robot Image - Floating Animation (Unchanged) */
+.robotImg {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  position: relative;
+  z-index: 1;
+  transform: translateZ(50px); 
+  filter: drop-shadow(0 20px 50px rgba(0, 255, 157, 0.3)); 
+  animation: float 5s ease-in-out infinite alternate;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px) translateZ(50px) rotateX(0deg);
+  }
+  100% {
+    transform: translateY(-15px) translateZ(50px) rotateX(0.5deg);
+  }
+}
+
+
+/* ============================================
+    RESPONSIVE DESIGN FIXES (Tablet)
+    ============================================ */
+
+@media screen and (max-width: 996px) {
+  .heroSection {
+    padding: 60px 0;
+    min-height: auto;
+  }
+
+  .heroContent {
+    flex-direction: column; 
+    text-align: center;
+    gap: 30px; 
+  }
+
+  .heroText {
+    max-width: 100%;
+    order: 2; 
+  }
+  
+  .tagline {
+      justify-content: center;
+      padding-left: 0;
+      border-left: none; 
+  }
+  
+  .heroTitle {
+    font-size: 2.8rem;
+  }
+  
+  .features {
+      justify-content: center; 
+  }
+  
+  .heroImage {
+    flex: 0 0 auto;
+    max-width: 90%;
+    margin: 0 auto;
+    order: 1; 
+    justify-content: center;
+  }
+  
+  .robotImg {
+    max-width: 300px; 
+    transform: translateZ(0); 
+    animation-name: bounce; 
+  }
+  
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  .heroButtons {
+      justify-content: center;
+  }
+}
+
+/* ============================================
+    CRITICAL MOBILE OPTIMIZATION (Max 576px)
+    ============================================ */
+
+@media screen and (max-width: 576px) {
+  .heroSection {
+    padding: 30px 0; /* Reduced top/bottom padding for more screen space */
+  }
+  
+  /* 1. Tagline Fix: Smaller font, less space */
+  .tagline {
+    font-size: 9px;
+    letter-spacing: 1.5px;
+    gap: 8px;
+    margin-bottom: 12px;
+  }
+  .separator {
+      font-size: 12px;
+  }
+  
+  /* 2. Hero Title Fix: Drastically reduced size to fit one/two lines perfectly */
+  .heroTitle {
+    font-size: 1.8rem; /* Significantly reduced from 2.2rem */
+    line-height: 1.2;
+    margin-bottom: 8px; /* Reduced spacing */
+  }
+  
+  /* 3. Hero Subtitle Fix */
+  .heroSubtitle {
+    font-size: 0.95rem;
+    line-height: 1.4;
+    margin-bottom: 15px;
+  }
+  
+  /* 4. Features/Chips Fix: Smaller padding and spacing */
+  .features {
+      margin-bottom: 15px; /* Reduced spacing */
+      gap: 6px; /* Smaller gap between chips */
+  }
+  
+  .feature {
+      font-size: 0.8rem;
+      padding: 3px 8px; /* Reduced padding */
+  }
+  .icon {
+      font-size: 8px; /* Smallest icon size */
+  }
+
+  /* 5. Buttons Fix: Full width but much smaller size */
+  .heroButtons {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px; /* Reduced gap between stacked buttons */
+  }
+
+  .heroButtons .button {
+    width: 100%;
+    font-size: 0.9rem;
+    padding: 10px 20px; /* Maintained but ensure W=100% */
+  }
+  
+  /* 6. Image Fix: Smaller robot to give content breathing room */
+  .robotImg {
+    max-width: 200px; /* Reduced to ensure it doesn't push content out */
+  }
+}

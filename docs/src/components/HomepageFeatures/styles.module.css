@@ -1,0 +1,368 @@
+/* .features {
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+  width: 100%;
+}
+
+.featureSvg {
+  height: 200px;
+  width: 200px;
+} */
+
+
+/* 
+
+.features {
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+  width: 100%;
+}
+
+.featureSvg {
+  height: 200px;
+  width: 200px;
+} */
+
+
+
+
+/* ============================================
+   LEARNING JOURNEY SECTION
+   ============================================ */
+
+.spectrumSection {
+  padding: 80px 0;
+  background: linear-gradient(180deg, #0f0f0f 0%, #0a0a0a 100%);
+  position: relative;
+}
+
+/* Section Header */
+.sectionHeader {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.sectionLabel {
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #00ff9d;
+  background: rgba(0, 255, 157, 0.1);
+  padding: 8px 20px;
+  border-radius: 20px;
+  border: 1px solid rgba(0, 255, 157, 0.3);
+  margin-bottom: 20px;
+}
+
+.sectionTitle {
+  font-size: 2.8rem;
+  font-weight: 900;
+  color: #ffffff;
+  margin-bottom: 16px;
+  text-shadow: 0 0 10px rgba(0, 255, 157, 0.15);
+}
+
+.sectionSubtitle {
+  font-size: 1.15rem;
+  color: rgba(255, 255, 255, 0.7);
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Journey Cards */
+.journeyCard {
+  background: linear-gradient(135deg, rgba(20, 20, 20, 0.9) 0%, rgba(10, 10, 10, 0.95) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  padding: 32px 28px;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  backdrop-filter: blur(10px);
+}
+
+.journeyCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #00ff9d 0%, #00e5ff 100%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.journeyCard:hover {
+  transform: translateY(-8px);
+  border-color: rgba(0, 255, 157, 0.3);
+  box-shadow: 0 12px 40px rgba(0, 255, 157, 0.15);
+}
+
+.journeyCard:hover::before {
+  opacity: 1;
+}
+
+/* Featured Card */
+.journeyCardFeatured {
+  border-color: rgba(0, 255, 157, 0.3);
+  box-shadow: 0 8px 30px rgba(0, 255, 157, 0.12);
+}
+
+.journeyCardFeatured::before {
+  opacity: 0.7;
+}
+
+.featuredBadge {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: linear-gradient(135deg, #00ff9d 0%, #00e5ff 100%);
+  color: #0a0a0a;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 6px 12px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 255, 157, 0.3);
+}
+
+/* Card Header */
+.cardHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.cardNumber {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: rgba(0, 255, 157, 0.2);
+  line-height: 1;
+}
+
+.cardIcon {
+  font-size: 3rem;
+  filter: drop-shadow(0 0 12px rgba(0, 255, 157, 0.3));
+}
+
+/* Card Content */
+.cardTitle {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 8px;
+  text-shadow: 0 0 8px rgba(0, 255, 157, 0.1);
+}
+
+.cardTagline {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #00ff9d;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.cardDescription {
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Topics Tags */
+.cardTopics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.topic {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #00e5ff;
+  background: rgba(0, 229, 255, 0.1);
+  border: 1px solid rgba(0, 229, 255, 0.3);
+  padding: 6px 12px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.topic:hover {
+  background: rgba(0, 229, 255, 0.2);
+  border-color: rgba(0, 229, 255, 0.5);
+  transform: translateY(-2px);
+}
+
+/* Example Box */
+.cardExample {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 14px;
+  background: rgba(0, 255, 157, 0.05);
+  border-left: 3px solid #00ff9d;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.5;
+}
+
+.exampleLabel {
+  font-weight: 700;
+  color: #00ff9d;
+  flex-shrink: 0;
+}
+
+/* Journey Flow Indicator */
+.journeyFlow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  margin-top: 60px;
+}
+
+.flowItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.flowCircle {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, rgba(0, 255, 157, 0.15) 0%, rgba(0, 229, 255, 0.15) 100%);
+  border: 2px solid rgba(0, 255, 157, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  transition: all 0.4s ease;
+}
+
+.flowCircle:hover {
+  transform: scale(1.1);
+  border-color: rgba(0, 255, 157, 0.6);
+  box-shadow: 0 8px 25px rgba(0, 255, 157, 0.3);
+}
+
+.flowItem p {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0;
+  text-align: center;
+}
+
+.flowConnector {
+  width: 80px;
+  height: 2px;
+  background: linear-gradient(90deg, rgba(0, 255, 157, 0.3) 0%, rgba(0, 229, 255, 0.3) 100%);
+  position: relative;
+}
+
+.flowConnector::after {
+  content: '→';
+  position: absolute;
+  right: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgba(0, 255, 157, 0.5);
+  font-size: 1.2rem;
+}
+
+/* ============================================
+   RESPONSIVE DESIGN
+   ============================================ */
+
+@media screen and (max-width: 996px) {
+  .spectrumSection {
+    padding: 60px 0;
+  }
+
+  .sectionHeader {
+    margin-bottom: 40px;
+  }
+
+  .sectionTitle {
+    font-size: 2.2rem;
+  }
+
+  .sectionSubtitle {
+    font-size: 1rem;
+  }
+
+  .journeyCard {
+    margin-bottom: 30px;
+  }
+
+  .journeyFlow {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .flowConnector {
+    width: 2px;
+    height: 60px;
+    background: linear-gradient(180deg, rgba(0, 255, 157, 0.3) 0%, rgba(0, 229, 255, 0.3) 100%);
+  }
+
+  .flowConnector::after {
+    content: '↓';
+    right: 50%;
+    bottom: -10px;
+    top: auto;
+    transform: translateX(50%);
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .spectrumSection {
+    padding: 50px 0;
+  }
+
+  .sectionTitle {
+    font-size: 1.8rem;
+  }
+
+  .sectionSubtitle {
+    font-size: 0.95rem;
+  }
+
+  .journeyCard {
+    padding: 24px 20px;
+  }
+
+  .cardTitle {
+    font-size: 1.3rem;
+  }
+
+  .cardNumber {
+    font-size: 2rem;
+  }
+
+  .cardIcon {
+    font-size: 1.5rem;
+  }
+
+  .flowCircle {
+    width: 60px;
+    height: 60px;
+    font-size: 1.8rem;
+  }
+
+  .flowItem p {
+    font-size: 0.85rem;
+  }
+}

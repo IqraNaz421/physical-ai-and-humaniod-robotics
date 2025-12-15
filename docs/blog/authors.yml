@@ -1,0 +1,9 @@
+IqraNaz421:
+  name: Iqra Naz (Course Author)
+  title: Lead Instructor, Physical AI & Humanoid Robotics
+  url: https://github.com/IqraNaz421 # Replace with your GitHub/LinkedIn URL
+  image_url: img/new-removebg-preview.png # Replace with your profile image path, or delete line
+  page: true
+  socials:
+    linkedin: iqra-naz-linkedin # Replace with your LinkedIn username
+    github: IqraNaz421 # Replace with your GitHub username
