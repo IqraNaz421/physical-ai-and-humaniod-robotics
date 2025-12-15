@@ -10,7 +10,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-# Password hashing context - using bcrypt
+
 # Removed bcrypt__default_ident to fix compatibility issues
 pwd_context = CryptContext(
     schemes=["bcrypt"],
