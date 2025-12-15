@@ -1,108 +1,108 @@
-# name: Deploy to GitHub Pages
-
-# on:
-#   push:
-#     branches:
-#       - main
-#       - master
-#     paths:
-#       - 'docs/'
-#       - '.github/workflows/deploy.yml'
-
-# permissions:
-#   contents: read
-#   pages: write
-#   id-token: write
-
-# concurrency:
-#   group: "pages"
-#   cancel-in-progress: false
-
-# jobs:
-#   build:
-#     name: Build Docusaurus
-#     runs-on: ubuntu-latest
-#     defaults:
-#       run:
-#         working-directory: docs
-#     steps:
-#       - uses: actions/checkout@v4
-#         with:
-#           fetch-depth: 0
-      
-#       - uses: actions/setup-node@v4
-#         with:
-#           node-version: 20
-#           cache: 'npm'
-#           cache-dependency-path: docs/package-lock.json
-      
-#       - name: Verify package-lock.json exists
-#         run: |
-#           if [ ! -f package-lock.json ]; then
-#             echo "⚠ package-lock.json not found, generating it..."
-#             npm install --package-lock-only
-#           fi
-      
-#       - name: Install dependencies
-#         run: npm ci
-      
-#       - name: Build website
-#         run: npm run build
-#         env:
-#           REACT_APP_API_URL: ${{ secrets.API_URL || 'https://iqoonaz4321-robotic.hf.space' }}
-#           API_URL: ${{ secrets.API_URL || 'https://iqoonaz4321-robotic.hf.space' }}
-#           GITHUB_PAGES_URL: https:/IqraNaz421/.github.io
-#           GITHUB_PAGES_BASE_URL: /physical-ai-and-humaniod-robotics/
-      
-#       - name: Verify build output
-#         run: |
-#           if [ ! -d "build" ]; then
-#             echo "❌ Build directory not found!"
-#             exit 1
-#           fi
-#           echo "✅ Build directory exists with $(find build -type f | wc -l) files"
-      
-#       - name: Upload Build Artifact
-#         uses: actions/upload-pages-artifact@v3
-#         with:
-#           path: docs/build
-
-#   deploy:
-#     name: Deploy to GitHub Pages
-#     needs: build
-#     runs-on: ubuntu-latest
-#     environment:
-#       name: github-pages
-#       url: ${{ steps.deployment.outputs.page_url }}
-#     steps:
-#       - name: Deploy to GitHub Pages
-#         id: deployment
-#         uses: actions/deploy-pages@v4
-
-
-
-
-name: Deploy static frontend to GH Pages
+name: Deploy to GitHub Pages
 
 on:
   push:
     branches:
       - main
+      - master
+    paths:
+      - 'docs/'
+      - '.github/workflows/deploy.yml'
 
 permissions:
   contents: read
   pages: write
   id-token: write
 
-jobs:
-  deploy:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
 
-      - name: Deploy static files
-        uses: peaceiris/actions-gh-pages@v3
+jobs:
+  build:
+    name: Build Docusaurus
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: docs
+    steps:
+      - uses: actions/checkout@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./docs/build
+          fetch-depth: 0
+      
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+          cache-dependency-path: docs/package-lock.json
+      
+      - name: Verify package-lock.json exists
+        run: |
+          if [ ! -f package-lock.json ]; then
+            echo "⚠ package-lock.json not found, generating it..."
+            npm install --package-lock-only
+          fi
+      
+      - name: Install dependencies
+        run: npm ci
+      
+      - name: Build website
+        run: npm run build
+        env:
+          REACT_APP_API_URL: ${{ secrets.API_URL || 'https://iqoonaz4321-robotic.hf.space' }}
+          API_URL: ${{ secrets.API_URL || 'https://iqoonaz4321-robotic.hf.space' }}
+          GITHUB_PAGES_URL: https:/IqraNaz421/.github.io
+          GITHUB_PAGES_BASE_URL: /physical-ai-and-humaniod-robotics/
+      
+      - name: Verify build output
+        run: |
+          if [ ! -d "build" ]; then
+            echo "❌ Build directory not found!"
+            exit 1
+          fi
+          echo "✅ Build directory exists with $(find build -type f | wc -l) files"
+      
+      - name: Upload Build Artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs/build
+
+  deploy:
+    name: Deploy to GitHub Pages
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+
+
+
+# name: Deploy static frontend to GH Pages
+
+# on:
+#   push:
+#     branches:
+#       - main
+
+# permissions:
+#   contents: read
+#   pages: write
+#   id-token: write
+
+# jobs:
+#   deploy:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Checkout repository
+#         uses: actions/checkout@v4
+
+#       - name: Deploy static files
+#         uses: peaceiris/actions-gh-pages@v3
+#         with:
+#           github_token: ${{ secrets.GITHUB_TOKEN }}
+#           publish_dir: ./docs/build
